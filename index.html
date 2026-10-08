@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#1e1e1e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css?v=104">
+<title>乡ALIARツ</title>
+</head>
+<body>
+
+<div id="app">
+
+  <section id="ed" class="pane">
+    <pre id="hl" aria-hidden="true"></pre>
+    <textarea id="ta" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" wrap="soft"></textarea>
+    <div class="fab" id="ed-fab">
+      <button id="fb" title="Open files" aria-label="Open files" style="display:none">▤</button>
+      <button id="mb" title="Menu" aria-label="Menu">⋮</button>
+    </div>
+  </section>
+
+  <div id="bar" role="separator" aria-orientation="horizontal" tabindex="0"></div>
+
+  <section id="pvw" class="pane">
+    <div id="pv" tabindex="-1">
+      <div id="stage">
+        <iframe id="fr" title="Preview"></iframe>
+      </div>
+    </div>
+    <div class="fab" id="pv-fab">
+      <button id="gear" title="Preview settings" aria-label="Preview settings">⚙</button>
+    </div>
+  </section>
+
+</div>
+
+<div id="panel-layer"></div>
+
+<input type="file" id="hidden-file" hidden>
+
+<script src="js/core.js?v=104"></script>
+<script src="js/themes.js?v=104"></script>
+<script src="js/settings.js?v=104"></script>
+<script src="js/menu.js?v=104"></script>
+<script src="js/emmet.js?v=104"></script>
+<script src="js/editor.js?v=104"></script>
+<script src="js/preview.js?v=104"></script>
+<script src="js/projects.js?v=104"></script>
+<script src="js/shortcuts.js?v=104"></script>
+<script>
+  LC.boot();
+</script>
+</body>
+</html>
